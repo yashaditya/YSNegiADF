@@ -1,0 +1,6 @@
+{
+	"name": "LocalDBAzureDBRuntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
