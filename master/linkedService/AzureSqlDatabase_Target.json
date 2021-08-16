@@ -1,13 +1,20 @@
 {
 	"name": "AzureSqlDatabase_Target",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"description": "Target",
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=dbs1234.database.windows.net;initial catalog=DB1234;user id=dbs1234.database.windows.net",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIllTTkFERlRVVE9SSUFMREFUQUZBQ1RPUllfZGZlNGNhY2ItMGU0ZC00NWFiLWE4NmUtZjliYWUzZTdlNTc4Ig0KfQ=="
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=dbs1234.database.windows.net;Initial Catalog=DB1234;User ID=dbs1234.database.windows.net",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "P@ssw0rd"
+			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
