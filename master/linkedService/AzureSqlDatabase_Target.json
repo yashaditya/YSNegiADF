@@ -2,11 +2,12 @@
 	"name": "AzureSqlDatabase_Target",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"description": "Target",
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=dbs1234.database.windows.net;initial catalog=DB1234;user id=dbs1234.database.windows.net",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIllTTkFERlRVVE9SSUFMREFUQUZBQ1RPUllfMGQyY2Y4M2YtM2MzZC00NGEyLTg4ZjUtNWRiNWZiNTgxZGJkIg0KfQ=="
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIllTTkFERlRVVE9SSUFMREFUQUZBQ1RPUllfYWE1MWM3NzAtNjMxNC00OTAyLTgxYWEtODE0ZTY2YjJhOTEyIg0KfQ=="
 		}
 	}
 }
