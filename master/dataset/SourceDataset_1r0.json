@@ -1,0 +1,53 @@
+{
+	"name": "SourceDataset_1r0",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_Source2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "grade",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "student_id",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "LastUpdated",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "H_id",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "title",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "History"
+		}
+	}
+}
