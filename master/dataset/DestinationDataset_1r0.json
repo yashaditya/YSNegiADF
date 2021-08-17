@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_1r0",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_Target_Linked",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "History"
+		}
+	}
+}
