@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase_Target'"
 		},
+		"AzureSqlDatabase_Target_Linked_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase_Target_Linked'"
+		},
 		"Source_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'Source'"
@@ -79,6 +83,9 @@
 					},
 					"AzureSqlDatabase_Source2_connectionString": {
 						"value": "[parameters('AzureSqlDatabase_Source2_connectionString')]"
+					},
+					"AzureSqlDatabase_Target_Linked_connectionString": {
+						"value": "[parameters('AzureSqlDatabase_Target_Linked_connectionString')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"

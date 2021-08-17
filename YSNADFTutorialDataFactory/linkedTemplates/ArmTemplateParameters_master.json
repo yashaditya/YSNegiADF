@@ -17,6 +17,9 @@
 		"AzureSqlDatabase_Target_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabase_Target_Linked_connectionString": {
+			"value": ""
+		},
 		"Source_connectionString": {
 			"value": ""
 		},
