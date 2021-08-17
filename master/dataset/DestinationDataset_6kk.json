@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_6kk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_Source2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "History"
+		}
+	}
+}
